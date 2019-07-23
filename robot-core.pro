@@ -20,7 +20,9 @@ HEADERS += \
     include/WestBot/Core/Pusher.hpp \
     include/WestBot/Core/System.hpp \
     include/WestBot/Core/SystemSimu.hpp \
-    include/WestBot/Core/TcpServer.hpp
+    include/WestBot/Core/TcpServer.hpp \
+    include/WestBot/Core/TrajectoryManager.hpp \
+    include/WestBot/Core/TrajectoryManagerSimu.hpp
 
 SOURCES += \
         src/main.cpp \
@@ -30,7 +32,8 @@ SOURCES += \
         src/Pusher.cpp \
         src/System.cpp \
         src/SystemSimu.cpp \
-        src/TcpServer.cpp
+        src/TcpServer.cpp \
+        src/TrajectoryManagerSimu.cpp
 
 
 INCLUDEPATH += \
