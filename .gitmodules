@@ -1,0 +1,3 @@
+[submodule "3rdparty/HumanAfterAll"]
+	path = 3rdparty/HumanAfterAll
+	url = https://github.com/WestTeam/HumanAfterAll.git
