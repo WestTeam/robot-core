@@ -1,8 +1,7 @@
 // Copyright (c) 2019 All Rights Reserved WestBot
 
-#include <QThread>
-
 #include <QNetworkInterface>
+#include <QThread>
 
 #include <WestBot/HumanAfterAll/Category.hpp>
 
