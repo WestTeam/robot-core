@@ -6,12 +6,12 @@ using namespace WestBot::Core::Protocol;
 
 uint16_t WestBot::Core::Protocol::protocolCrc( uint8_t* msg, uint16_t size )
 {
-	uint16_t crc = 0;
+    uint16_t crc = 0;
 
-	while( --size > 4 )
+    while( --size > 4 )
     {
-		crc += msg[ size ];
+    	crc += msg[ size ];
     }
 
-	return crc;
+    return crc;
 }
