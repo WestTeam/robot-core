@@ -14,6 +14,8 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 HEADERS += \
     include/Macros.hpp \
+    include/WestBot/Core/Odometry.hpp \
+    include/WestBot/Core/OdometrySimu.hpp \
     include/WestBot/Core/Protocol.hpp \
     include/WestBot/Core/Pusher.hpp \
     include/WestBot/Core/System.hpp \
@@ -22,6 +24,8 @@ HEADERS += \
 
 SOURCES += \
         src/main.cpp \
+        src/Odometry.cpp \
+        src/OdometrySimu.cpp \
         src/Protocol.cpp \
         src/Pusher.cpp \
         src/System.cpp \
