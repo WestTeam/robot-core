@@ -13,6 +13,7 @@ CONFIG -= app_bundle
 DEFINES += QT_DEPRECATED_WARNINGS
 
 HEADERS += \
+    include/Macros.hpp \
     include/WestBot/Core/Protocol.hpp \
     include/WestBot/Core/Pusher.hpp \
     include/WestBot/Core/System.hpp \
