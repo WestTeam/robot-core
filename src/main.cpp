@@ -11,7 +11,6 @@
 
 #include <WestBot/Core/Pusher.hpp>
 #include <WestBot/Core/SystemSimu.hpp>
-#include <WestBot/Core/AliveSimu.hpp>
 
 using namespace WestBot;
 using namespace WestBot::Core;
@@ -39,9 +38,6 @@ int main( int argc, char *argv[] )
     handler.setEnableDebugLevel( true );
 #endif
 
-    AliveSimu alive;
-    alive.start();
-
     SystemSimu sys;
 
     if( ! sys.init() )
@@ -49,6 +45,8 @@ int main( int argc, char *argv[] )
         tDebug( LOG ) << "Failed to init system";
         return -1;
     }
+
+    sys.start();
 
     // Test a simple pusher object
     Pusher push( std::chrono::milliseconds( 500 ) );

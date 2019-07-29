@@ -14,6 +14,7 @@ namespace
 
 SystemSimu::SystemSimu( QObject* parent )
     : System( parent )
+    , _alive( new AliveSimu() )
 {
 }
 
@@ -45,13 +46,18 @@ void SystemSimu::start()
             << "System not safe to start: Odometry check failed";
     }
 
-    // TODO
+    _alive->init( Color::Yellow );
+    _alive->start();
 }
 
 void SystemSimu::stop()
 {
     tDebug( LOG ) << "System stopping...";
 
+    if( _alive )
+    {
+        _alive->stop();
+    }
     // TODO
 }
 

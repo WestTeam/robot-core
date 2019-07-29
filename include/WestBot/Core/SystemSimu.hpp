@@ -3,6 +3,7 @@
 #ifndef WESTBOT_CORE_SYSTEMSIMU_HPP_
 #define WESTBOT_CORE_SYSTEMSIMU_HPP_
 
+#include "AliveSimu.hpp"
 #include "System.hpp"
 
 namespace WestBot {
@@ -22,6 +23,9 @@ public:
     void reset() override;
 
     bool isSafe() const override;
+
+private:
+    AliveSimu* _alive;
 };
 
 }

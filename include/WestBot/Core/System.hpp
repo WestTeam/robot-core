@@ -43,8 +43,6 @@ public:
     //    return reinterpret_cast< T >( _registry.at( "name" ) );
     //}
 
-    //virtual void run();
-
 protected:
     QTimer _gameTimer;
     TcpServer _tcpServer;
