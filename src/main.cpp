@@ -11,6 +11,7 @@
 
 #include <WestBot/Core/Pusher.hpp>
 #include <WestBot/Core/SystemSimu.hpp>
+#include <WestBot/Core/AliveSimu.hpp>
 
 using namespace WestBot;
 using namespace WestBot::Core;
@@ -37,6 +38,9 @@ int main( int argc, char *argv[] )
 #ifdef DEBUG
     handler.setEnableDebugLevel( true );
 #endif
+
+    AliveSimu alive;
+    alive.start();
 
     SystemSimu sys;
 
